@@ -14,7 +14,7 @@ body {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background-color: #fff;
+    background-color: #F9F7E8;
     overflow: hidden;
 }
 
@@ -24,7 +24,7 @@ body {
     width: 2000px;
     height: 2000px;
     border-radius: 50%;
-    background: linear-gradient(-45deg, #deb887, #f4a460);
+    background: linear-gradient(-45deg, #E75152, #C886A2);
     top: -10%;
     right: 48%;
     transform: translateY(-40%);
@@ -40,7 +40,7 @@ body {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: #fff;
+    background-color: #F9F7E8;
 }
 
 .content-container {
@@ -65,7 +65,7 @@ body {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     z-index: 2;
-    transition: 0.5s 1s ease-in-out;
+    transition: 0.2s .5s ease-in-out;
 }
 
 
@@ -78,7 +78,7 @@ body {
     grid-row: 1 / 2;
     z-index: 1;
     opacity: 0;
-    transition: 0.5s 1s ease-in-out;
+    transition: 0.2s .5s ease-in-out;
 }
 
 
@@ -102,16 +102,20 @@ button {
     border: none;
     border-radius: 49px;
     cursor: pointer;
-    background-color: sandybrown;
-    color: #fff;
+    background-color: #E75152;
+    color: #F9F7E8;
     text-transform: uppercase;
     font-weight: 700;
     margin: 10px 0;
-    transition: .5s;
+    transition: .7s;
+}
+
+.grad {
+    background: linear-gradient(-45deg, #E75152, #C886A2);
 }
 
 button:hover {
-    background-color: burlywood;
+    opacity: 0.7;
 }
 
 
@@ -134,15 +138,15 @@ button:hover {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: #333;
+    color: #444;
     font-size: 20px;
     border-radius: 50%;
-    transition: .3s;
+    transition: .5s;
 }
 
 .social-icon:hover {
-    color: sandybrown;
-    border-color: burlywood;
+    color: #E75152;
+    border-color: #FBCBC1;
 }
 
 
@@ -178,7 +182,7 @@ button:hover {
 }
 
 .panel .content {
-    color: #fff;
+    color: #F9F7E8;
     transition: 1s .7s ease-in-out;
 
 }
@@ -197,7 +201,7 @@ button:hover {
 .btn.transparent {
     margin: 0;
     background: none;
-    border: 2.5px solid #fff;
+    border: 2.5px solid #F9F7E8;
     width: 135px;
     height: 40px;
     font-weight: 600;
@@ -222,14 +226,14 @@ button:hover {
     height: 30px;
     width: 30px;
     border-radius: 50%;
-    background-color: #fff;
-    border: 2px solid #333;
+    background-color: #F9F7E8;
+    border: 2px solid #444;
     pointer-events: all;
 }
 
 .content-wrapper button.light-btn {
-    background-color: #fff;
-    border: #fff;
+    background-color: #F9F7E8;
+    border: #F9F7E8;
     justify-content: center;
     pointer-events: none;
     opacity: 0;
@@ -237,31 +241,39 @@ button:hover {
 .content-wrapper button.dark-btn {
     justify-content: center;
     pointer-events: all;
+    opacity: 1;
+    color: #444;
 }
 
 
 
 .content-wrapper.dark-mode {
-    background-color: #333;
-    color: #fff;
+    background-color: #444;
+    color: #F9F7E8;
 }
 .content-wrapper.dark-mode .social-icon {
-    color: #fff;
+    color: #F9F7E8;
 }
 .content-wrapper.dark-mode .title {
-    color: #fff;
+    color: #F9F7E8;
 }
 .content-wrapper.dark-mode .right-panel {
-    color: #fff;
+    color: #F9F7E8;
 }
 .content-wrapper.dark-mode button.dark-btn {
-    background-color: #333;
+    background-color: #444;
+    color: #fff;
     pointer-events: none;
     opacity: 0;
 }
 .content-wrapper.dark-mode button.light-btn {
     pointer-events: all;
+    color: #444;
     opacity: 1;
+}
+
+button .fa-moon-o {
+
 }
 
 
